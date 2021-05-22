@@ -1,5 +1,5 @@
 # protor-ruby
-[Prometheus aggregator](https://github.com/rolandhawk/prometheus-aggregator) client for ruby
+[Prometheus aggregator](https://github.com/sayadedi00/ruby.promotheus) client for ruby
 
 ## Installation
 In Gemfile
@@ -51,6 +51,3 @@ $protor = Protor.new do |conf|
   conf[:formatter] = :udp # valid option only :udp, format to send
 end
 ````
-
-## Contributing
-[Fork the project](https://github.com/rolandhawk/protor-ruby) and send pull requests.
