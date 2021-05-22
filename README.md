@@ -1,5 +1,5 @@
-# protor-ruby
-[Prometheus aggregator](https://github.com/sayadedi00/ruby.promotheus) client for ruby
+# Ruby promotheus
+[Aggregator](https://github.com/sayadedi00/ruby.promotheus) client for ruby
 
 ## Installation
 In Gemfile
