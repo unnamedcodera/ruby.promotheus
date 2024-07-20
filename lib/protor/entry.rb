@@ -18,6 +18,12 @@ class Protor
       verify
     end
 
+    def changeProduct(id, name, value, labels = nil)
+      @name = name.to_s
+
+      raise InvalidNameError, name unless name =~ VALID_NAME
+      raise InvalidTypeError, type unless VALID_TYPE.include?(type)
+    end
     private
 
     def verify
@@ -29,6 +35,8 @@ class Protor
       end
       additional.each do |a|
         raise InvalidAdditionalError, additional unless a.is_a?(Numeric)
+        raise InvalidLabelNameError, labels unless k =~ VALID_LABEL_NAME
+        super("Invalid type #{message}, allowed types are [c, g, h]")
       end
     end
 
